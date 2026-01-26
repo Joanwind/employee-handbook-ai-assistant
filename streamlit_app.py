@@ -81,7 +81,7 @@ def push_assistant_message(text: str):
 # UI
 # -----------------------------
 st.set_page_config(
-    page_title="Basecamp Handbook AI Assistant",
+    page_title="Employee Handbook AI Assistant (Basecamp Demo)",
     page_icon="🤖",
     layout="centered",
     initial_sidebar_state="collapsed"
@@ -89,10 +89,10 @@ st.set_page_config(
 
 ensure_session_state()
 
-st.title("🤖 Basecamp Handbook AI Assistant")
+st.title("🤖 Employee Handbook AI Assistant (Basecamp Demo)")
 st.caption(
-    "Ask questions and get answers grounded in the Basecamp handbook. "
-    "If the handbook doesn't cover something, the assistant will say so."
+    "A RAG-based AI assistant for answering questions from employee handbooks. "
+    "Demo powered by the public Basecamp handbook."
 )
 
 # Sidebar controls
