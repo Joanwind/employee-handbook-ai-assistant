@@ -22,6 +22,11 @@ A Retrieval-Augmented Generation (RAG) based AI assistant that answers employee 
 
 🔗 https://employee-handbook-ai-assistant-drmdst2q9fpmlaoblblntm.streamlit.app
 
+## Screenshots
+### Homepage & Example QA
+
+![App Screenshot](assets/demo.png)
+
 ## Dataset
 
 This project uses a synthetic employee handbook dataset created for testing RAG systems.
