@@ -11,19 +11,19 @@ from app.search_agent import rag_answer
 # -----------------------------
 # Config
 # -----------------------------
-REPO_OWNER = "basecamp"
-REPO_NAME = "handbook"
+REPO_OWNER = "Joanwind"
+REPO_NAME = "synthetic-employee-handbook"
 BRANCH = None
 
-BASE_REPO_URL = "https://github.com/basecamp/handbook/blob/master/"
+BASE_REPO_URL = "https://github.com/Joanwind/synthetic-employee-handbook/blob/main/"
 MODEL_NAME = "llama-3.1-8b-instant"
 
 DEFAULT_TOP_K = 2
 DEFAULT_MAX_CHARS = 1200
 
 SUGGESTED_QUESTIONS = [
-    "What is Basecamp's vacation policy?",
-    "How does parental leave work?",
+    "How do I request annual leave and how far in advance should I apply?",
+    "What are the core working hours I need to be available during the day?",
     "Are employees allowed to work remotely?",
 ]
 
@@ -81,7 +81,7 @@ def push_assistant_message(text: str):
 # UI
 # -----------------------------
 st.set_page_config(
-    page_title="Employee Handbook AI Assistant (Basecamp Demo)",
+    page_title="Employee Handbook AI Assistant",
     page_icon="🤖",
     layout="centered",
     initial_sidebar_state="collapsed"
@@ -89,10 +89,9 @@ st.set_page_config(
 
 ensure_session_state()
 
-st.title("🤖 Employee Handbook AI Assistant (Basecamp Demo)")
+st.title("🤖 Employee Handbook AI Assistant")
 st.caption(
     "A RAG-based AI assistant for answering questions from employee handbooks. "
-    "Demo powered by the public Basecamp handbook."
 )
 
 # Sidebar controls

@@ -6,11 +6,11 @@ from app.search_tools import SearchTool
 from app.search_agent import rag_answer
 from app.logs import log_record_to_file
 
-REPO_OWNER = "basecamp"
-REPO_NAME = "handbook"
+REPO_OWNER = "Joanwind"
+REPO_NAME = "synthetic-employee-handbook"
 BRANCH = None
 
-BASE_REPO_URL = "https://github.com/basecamp/handbook/blob/master/"  # 你原来的链接风格 :contentReference[oaicite:8]{index=8}
+BASE_REPO_URL = "https://github.com/Joanwind/synthetic-employee-handbook/blob/main/"
 
 
 def main():

@@ -49,7 +49,7 @@ def read_repo_data(repo_owner: str, repo_name: str, branch: Optional[str] = None
             post = frontmatter.loads(raw)
             data = post.to_dict()
             data["filename"] = file.filename
-            data["content"] = post.content  # 你的原代码里后续要用 content 做 chunk :contentReference[oaicite:6]{index=6}
+            data["content"] = post.content
             docs.append(data)
 
     return docs

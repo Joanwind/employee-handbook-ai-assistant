@@ -1,20 +1,31 @@
-# Day 1 GitHub Repo Ingestion Project
+# Employee Handbook AI Assistant
 
-This project demonstrates how to ingest documentation data from a public GitHub repository
-using Python.
+A Retrieval-Augmented Generation (RAG) based AI assistant that answers employee policy questions using semantic search and large language models.
+
+## Features
+
+- Ingests documentation from a GitHub repository
+- Chunking, embedding, and vector-based semantic search
+- Source-grounded answers with citations
+- Streamlit-based interactive UI
+- Deployed on Streamlit Cloud
+
+## Tech Stack
+
+- Python
+- Streamlit
+- Sentence Transformers
+- Vector Search
+- Groq LLM API
+
+## Live Demo
+
+🔗 https://employee-handbook-ai-assistant-drmdst2q9fpmlaoblblntm.streamlit.app
 
 ## Dataset
-- Repository: https://github.com/openai/openai-cookbook
-- File types: `.md`, `.mdx`
 
-## Method
-- Downloaded the repository as a ZIP file using `requests`
-- Read files in memory using `zipfile`
-- Parsed markdown files and extracted content using `python-frontmatter`
+This project uses a synthetic employee handbook dataset created for testing RAG systems.
 
-## Result
-- Total documents ingested: 66
+## Notes
 
-## Next Steps
-- Clean and chunk the documents
-- Prepare the data for search or RAG indexing
+This is a portfolio project demonstrating end-to-end RAG system design, including data ingestion, retrieval, and answer generation.
